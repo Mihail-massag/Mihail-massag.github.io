@@ -1,432 +1,267 @@
-<!-- index.html -->
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Массаж в Коммунарке — Михаил | Домашний кабинет</title>
-  <meta name="description" content="Массаж в Коммунарке рядом с метро Коммунарка. Михаил, 3 года опыта. Спина/шея, классический, спортивный, антистресс, лимфодренаж. Онлайн-запись через WhatsApp: +7 915 257-97-42." />
-  <meta name="keywords" content="массаж Коммунарка, массаж м Коммунарка, массаж рядом метро Коммунарка, массажист Коммунарка, массаж спины Коммунарка, массаж шеи Коммунарка, спортивный массаж Коммунарка, антистресс массаж Коммунарка" />
-  <meta name="theme-color" content="#c7f9a7" />
-  <link rel="icon" href="data:,">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Массаж в Коммунарке (м. Коммунарка) — Михаил</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Массаж в Коммунарке — Михаил (м. Коммунарка)" />
-  <meta property="og:description" content="Домашний кабинет • 3 года опыта • Онлайн-запись WhatsApp: +7 915 257-97-42" />
-  <meta property="og:type" content="website" />
+<meta name="description" content="Массаж в Коммунарке рядом с метро Коммунарка. Михаил — медицинское образование, 3 года опыта. Массаж спины и шеи. Запись: +7 915 257-97-42." />
+<meta name="keywords" content="массаж Коммунарка, массаж спины Коммунарка, массаж шеи Коммунарка, массаж рядом метро Коммунарка" />
+<meta name="theme-color" content="#f3e6cf" />
+<link rel="icon" href="data:,">
 
-  <style>
-    :root{
-      --bg:#c7f9a7;        /* салатовый фон */
-      --card:#ffffff;      /* карточки белые */
-      --muted:#2f4f2f;     /* приглушённый текст */
-      --text:#0b1f0b;      /* основной текст */
-      --accent:#22c55e;    /* зелёный акцент */
-      --accent2:#86efac;   /* светло-зелёный */
-      --border:rgba(11,31,11,.16);
-      --shadow: 0 18px 40px rgba(11,31,11,.12);
-      --radius: 18px;
-      --max: 1080px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
-      background: linear-gradient(180deg, #d7ffb8, var(--bg));
-      color:var(--text);
-      line-height:1.65;
-      font-size: 18px; /* крупнее текст */
-    }
-    a{color:inherit}
-    .container{max-width:var(--max); margin:0 auto; padding: 0 20px;}
-    header{
-      position: sticky; top: 0;
-      backdrop-filter: blur(10px);
-      background: rgba(215,255,184,.75);
-      border-bottom: 1px solid var(--border);
-      z-index: 50;
-    }
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      padding: 14px 0;
-      gap: 14px;
-    }
-    .brand{
-      display:flex; gap:10px; align-items:center; text-decoration:none;
-    }
-    .logo{
-      width:34px;height:34px;border-radius:12px;
-      background: linear-gradient(135deg, rgba(34,197,94,.95), rgba(134,239,172,.95));
-      box-shadow: 0 10px 24px rgba(11,31,11,.10);
-    }
-    .brand b{letter-spacing:.2px}
-    .brand small{display:block; color:var(--muted); font-weight:600; margin-top:2px; font-size:13px}
-    .menu{display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:flex-end}
-    .menu a{
-      text-decoration:none; color:var(--muted);
-      padding:8px 10px; border-radius:12px;
-      border: 1px solid transparent;
-      font-weight: 600;
-      font-size: 15px;
-    }
-    .menu a:hover{color:var(--text); border-color: var(--border); background: rgba(255,255,255,.55)}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:10px;
-      padding: 14px 18px;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.65);
-      color: var(--text);
-      text-decoration:none;
-      cursor:pointer;
-      transition: transform .08s ease, background .15s ease, border-color .15s ease;
-      user-select:none;
-      white-space:nowrap;
-      font-size: 16px;
-      font-weight: 700;
-    }
-    .btn:hover{background: rgba(255,255,255,.85); border-color: rgba(11,31,11,.25)}
-    .btn:active{transform: translateY(1px)}
-    .btn.primary{
-      background: linear-gradient(135deg, rgba(34,197,94,.20), rgba(134,239,172,.35));
-      border-color: rgba(34,197,94,.35);
-    }
-    .btn.primary:hover{border-color: rgba(34,197,94,.55)}
-    .pill{
-      display:inline-flex; gap:8px; align-items:center;
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.65);
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 700;
-    }
-    .card{
-      background: rgba(255,255,255,.80);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-    .hero{padding: 54px 0 18px;}
-    .hero-grid{
-      display:grid;
-      grid-template-columns: 1.25fr .75fr;
-      gap: 22px;
-      align-items:stretch;
-    }
-    @media (max-width: 900px){
-      .hero-grid{grid-template-columns: 1fr; }
-      .menu{display:none}
-      .nav{justify-content:space-between}
-    }
-    .hero-left{padding: 26px}
-    .hero-right{padding: 20px; display:flex; flex-direction:column; gap:12px}
-    h1{margin: 12px 0 10px; font-size: 52px; line-height:1.12; letter-spacing:-.6px}
-    @media (max-width: 520px){ h1{font-size: 40px} }
-    .lead{color: var(--muted); font-size: 20px; max-width: 72ch}
-    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top: 18px}
+<style>
+:root{
+  --bg:#f3e6cf;
+  --bg2:#faefd9;
+  --card:#ffffff;
+  --muted:#4a3b2a;
+  --text:#1f150d;
+  --border:rgba(31,21,13,.16);
+  --shadow:0 18px 40px rgba(31,21,13,.10);
+  --radius:18px;
+  --max:1080px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  background:linear-gradient(180deg,var(--bg2),var(--bg));
+  color:var(--text);
+  line-height:1.6;
+  font-size:17px;
+}
+.container{max-width:var(--max);margin:0 auto;padding:0 20px;}
 
-    .stats{display:grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 18px}
-    @media (max-width: 520px){ .stats{grid-template-columns: 1fr; } }
-    .stat{
-      padding: 12px; border-radius: 16px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.70);
-    }
-    .stat b{display:block; font-size: 20px}
-    .stat span{color: var(--muted); font-size: 14px; font-weight: 650}
+header{
+  position:sticky;top:0;
+  background:rgba(250,239,217,.9);
+  border-bottom:1px solid var(--border);
+}
+.nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 0;
+}
+.brand{
+  display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--text);
+}
+.logo{
+  width:34px;height:34px;border-radius:12px;
+  background:linear-gradient(135deg,#8b6b3f,#f3e6cf);
+}
+.menu a{
+  margin-left:12px;
+  text-decoration:none;
+  color:var(--muted);
+  font-weight:700;
+  font-size:14px;
+}
+.menu a:hover{color:var(--text)}
 
-    .aside-box{
-      border-radius: 16px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.70);
-      padding: 14px;
-    }
-    .aside-box h3{margin:0 0 8px; font-size: 18px}
-    .aside-box p{margin:0; color: var(--muted); font-size: 16px}
+.btn{
+  display:inline-flex;
+  padding:12px 16px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  background:#fff;
+  text-decoration:none;
+  font-weight:800;
+  font-size:15px;
+  color:var(--text);
+}
 
-    section{padding: 22px 0}
-    .section-title{
-      display:flex; align-items:flex-end; justify-content:space-between; gap: 14px; flex-wrap:wrap;
-      margin-bottom: 14px;
-    }
-    .section-title h2{margin:0; font-size: 32px; letter-spacing:-.3px}
-    .section-title p{margin:0; color: var(--muted); max-width: 78ch; font-size: 18px}
+.hero{padding:50px 0}
+h1{font-size:42px;margin:12px 0}
+.lead{color:var(--muted);font-size:18px;font-weight:600}
 
-    .grid-3{display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px}
-    .grid-2{display:grid; grid-template-columns: repeat(2, 1fr); gap: 14px}
-    @media (max-width: 900px){
-      .grid-3{grid-template-columns: 1fr}
-      .grid-2{grid-template-columns: 1fr}
-    }
-    .service, .benefit, .step, .review{
-      padding: 16px;
-      border-radius: 18px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.70);
-    }
-    .service h3, .benefit h3, .step h3{margin: 0 0 8px; font-size: 18px}
-    .service p, .benefit p, .step p{margin: 0; color: var(--muted); font-size: 16px}
+.card{
+  background:rgba(255,255,255,.92);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:22px;
+  box-shadow:var(--shadow);
+}
 
-    .price{
-      padding: 18px;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.70);
-      overflow:hidden;
-    }
-    table{width:100%; border-collapse: collapse; margin-top: 10px}
-    th, td{padding: 12px 10px; border-bottom: 1px solid var(--border); text-align:left}
-    th{color: var(--muted); font-weight: 800; font-size: 14px}
-    td{font-size: 16px; font-weight: 650}
-    .note{color: var(--muted); font-size: 14px; margin-top: 10px; font-weight: 600}
+.grid-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+@media(max-width:900px){
+  .grid-2{grid-template-columns:1fr}
+}
 
-    .profile{
-      display:grid; grid-template-columns: 1fr 1fr;
-      gap: 14px; align-items:stretch;
-    }
-    @media (max-width: 900px){ .profile{grid-template-columns: 1fr} }
-    .photo{
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.70);
-      padding: 14px;
-      display:flex; flex-direction:column; gap:10px;
-    }
-    .photo img{
-      width:100%; height: 360px; object-fit:cover;
-      border-radius: 16px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.50);
-    }
-    .photo small{color: var(--muted); font-weight: 650}
-    .bio{padding: 18px}
+/* ---------- ФОТО (уменьшено и без обрезки) ---------- */
 
-    .calwrap{padding: 18px}
-    .hint{color: var(--muted); font-size: 14px; margin-top: 10px; font-weight: 600}
+.photo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(255,255,255,.92);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:20px;
+}
 
-    .footer{
-      padding: 22px 0 40px;
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 650;
-    }
-    .divider{height:1px; background: var(--border); margin: 12px 0 0;}
+.photo img{
+  width:60%;              /* уменьшено примерно в 2 раза */
+  max-width:260px;        /* ограничение размера */
+  height:auto;
+  object-fit:contain;     /* без обрезки */
+  display:block;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
 
-    .floating{
-      position: fixed; right: 16px; bottom: 16px;
-      display:flex; flex-direction:column; gap:10px;
-      z-index: 60;
-    }
-    .floating .btn{box-shadow: var(--shadow)}
-  </style>
-
-  <!-- LocalBusiness schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Массажист Михаил (Коммунарка)",
-    "description": "Массаж в Коммунарке рядом с метро Коммунарка. Домашний кабинет. Спина/шея, классический, спортивный, антистресс. Опыт 3 года.",
-    "areaServed": "Москва, Коммунарка",
-    "telephone": "+79152579742",
-    "priceRange": "₽₽",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Москва",
-      "addressRegion": "Коммунарка",
-      "addressCountry": "RU"
-    }
+@media(max-width:900px){
+  .photo img{
+    width:70%;
+    max-width:220px;
   }
-  </script>
+}
+
+/* ---------- */
+
+h2{font-size:26px;margin:30px 0 10px}
+
+.service{margin-bottom:12px}
+.service h3{margin:0 0 6px;font-size:17px}
+.service p{margin:0;color:var(--muted);font-size:15px;font-weight:600}
+
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th,td{padding:12px;border-bottom:1px solid var(--border)}
+th{font-size:13px;color:var(--muted)}
+td{font-size:15px;font-weight:800}
+
+.footer{
+  margin-top:40px;
+  padding:20px 0;
+  color:var(--muted);
+  font-size:13px;
+}
+</style>
 </head>
 
 <body>
+
 <header>
-  <div class="container">
-    <div class="nav">
-      <a class="brand" href="#top" aria-label="На главную">
-        <span class="logo" aria-hidden="true"></span>
-        <span>
-          <b>Михаил</b>
-          <small>массажист • Коммунарка (Москва) • м. Коммунарка</small>
-        </span>
-      </a>
-
-      <nav class="menu" aria-label="Навигация">
-        <a href="#booking">Обо мне</a>
-        <a href="#services">Услуги</a>
-        <a href="#prices">Цены</a>
-        <a href="page2.html">FAQ / Противопоказания</a>
-      </nav>
-
-      <a class="btn primary" href="https://wa.me/79152579742" target="_blank" rel="noopener">WhatsApp</a>
+  <div class="container nav">
+    <a class="brand" href="#">
+      <div class="logo"></div>
+      <div>
+        <b>Михаил</b><br>
+        <small style="font-size:12px;color:var(--muted);font-weight:700;">массажист • Коммунарка (Москва)</small>
+      </div>
+    </a>
+    <div class="menu">
+      <a href="#about">Обо мне</a>
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="page2.html">FAQ</a>
     </div>
   </div>
 </header>
 
-<main id="top">
-  <div class="container">
+<div class="container">
 
-    <section class="hero">
-      <div class="hero-grid">
-        <div class="card hero-left">
-          <span class="pill">Домашний кабинет • 3 года опыта • Коммунарка • рядом с м. Коммунарка</span>
-          <h2>Массаж в Коммунарке рядом с метро Коммунарка</h2>
-          <p class="lead">
-            Меня зовут <b>Михаил</b>, я массажист в Коммунарке (Москва) с опытом 3 года.
-            Принимаю в спокойном домашнем кабинете. Помогаю снять напряжение, зажимы в шее и спине,
-            восстановиться после тренировок и стресса.
-          </p>
+<section class="hero">
+  <div class="card">
+    <h1>Массаж в Коммунарке рядом с метро Коммунарка</h1>
+    <p class="lead">
+      Профессиональный массаж в Коммунарке (Новая Москва).
+      Работаю бережно и внимательно, учитывая особенности каждого клиента.
+    </p>
+    <div style="margin-top:18px;">
+      <a class="btn" href="https://wa.me/79152579742" target="_blank">Записаться в WhatsApp</a>
+      <a class="btn" href="tel:+79152579742">Позвонить</a>
+    </div>
+  </div>
+</section>
 
-          <div class="cta">
-            <a class="btn" href="tel:+79152579742">Позвонить: +7 915 257-97-42</a>
-            <a class="btn" href="page2.html">FAQ / Противопоказания</a>
-          </div>
-
-
-        </div>
-
-        <div class="card hero-right">
-          <div class="aside-box">
-            <h3>Быстро записаться</h3>
-            <p>
-              WhatsApp: <a href="https://wa.me/79152579742" target="_blank" rel="noopener"><b>+7 915 257-97-42</b></a><br/>
-              Телефон: <a href="tel:+79152579742"><b>+7 915 257-97-42</b></a>
-            </p>
-          </div>
-
-          <div class="aside-box">
-            <h3>Кому подходит</h3>
-            <p>Офисная работа, боли в спине/шее, стресс, усталость, восстановление после тренировок.</p>
-          </div>
-
-          <div class="aside-box">
-            <h3>Локация</h3>
-            <p>Москва, Коммунарка • рядом с метро Коммунарка. Точный адрес — после записи.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <br>
-       <h2>Услуги</h2>
-        <h4>Подбираю технику под ваш запрос: расслабление, восстановление, глубокая проработка.</h4>
-      <div class="grid-3">
-        <div class="service">
-          <h3>Классический массаж</h3>
-          <p>Снимает напряжение, улучшает кровообращение, повышает общий тонус организма.</p>
-        </div>
-        <div class="service">
-          <h3>Спина и шейно-воротниковая зона</h3>
-          <p>Идеален при сидячей работе, болях в шее, зажимах и дискомфорте в спине.</p>
-        </div>
-        <div class="service">
-          <h3>Спортивный массаж</h3>
-          <p>Глубокая проработка мышц и восстановление после тренировок и нагрузок.</p>
-        </div>
-        <div class="service">
-          <h3>Антистресс-массаж</h3>
-          <p>Глубокое расслабление, снижение напряжения, улучшение сна и самочувствия.</p>
-        </div>
-        <div class="service">
-          <h3>Лимфодренажный массаж</h3>
-          <p>Снижение отёчности и поддержка обменных процессов (по показаниям).</p>
-        </div>
-        <div class="service">
-          <h3>Индивидуальный сеанс</h3>
-          <p>Комбинирую техники под вашу цель и ощущения. Интенсивность — комфортная.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="prices">
-     <br>
-        <h2>Цены</h2>
-        <h4>Финальная стоимость зависит от выбранной техники и длительности сеанса.</h4>
-      <div class="price card">
-        <table aria-label="Прайс">
-          <thead>
-            <tr><th>Услуга</th><th>60 минут</th><th>90 минут</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Классический массаж</td><td>от 3000 ₽</td><td>от 4500 ₽</td></tr>
-            <tr><td>Спортивный массаж</td><td>от 3500 ₽</td><td>от 5000 ₽</td></tr>
-            <tr><td>Массаж спины</td><td>от 2500 ₽</td><td>—</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="booking">
-      <div class="grid-2">    <br>        </div>
-    <h2>Обо мне</h2>
-          <div class="profile">
-            <div class="photo">
-              <img src="photo.jpg" alt="Михаил — массажист в Коммунарке (Москва)">
-              </div>
-            <div class="benefit">
-              <h3>Михаил</h3>
-              <p>
-                Массажист в Коммунарке (Москва), 3 года практики. Работаю аккуратно и по ощущениям клиента,
-                подбираю интенсивность и технику.
-	<br>
-               <b>Частые запросы:массаж спины Коммунарка,массаж шеи Коммунарка,
-                восстановление после тренировок, антистресс.
-              </p>
-                             
-              </div>
-
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <section id="contacts">
-      <div class="section-title">
-        <h2>Контакты</h2>
-        <p>Москва, Коммунарка • рядом с метро Коммунарка</p>
-      </div>
-
-      <div class="card" style="padding:18px;">
-        <p style="margin:0; color:var(--muted); font-size:16px; font-weight:650;">
-          Телефон / WhatsApp: <b><a href="tel:+79152579742">+7 915 257-97-42</a></b><br/>
-          WhatsApp ссылка: <a href="https://wa.me/79152579742" target="_blank" rel="noopener">wa.me/79152579742</a><br/>
-          <span style="display:inline-block; margin-top:10px;">Точный адрес и ориентир сообщаю после записи.</span>
-        </p>
-        <div class="cta" style="margin-top:14px;">
-          <a class="btn primary" href="https://wa.me/79152579742" target="_blank" rel="noopener">Написать в WhatsApp</a>
-          <a class="btn" href="page2.html">FAQ / Противопоказания</a>
-        </div>
-      </div>
-    </section>
-
-    <div class="footer">
-      <div class="divider"></div>
-      <p style="margin:14px 0 0;">
-        © <span id="year"></span> Михаил, массажист (Коммунарка, Москва). Информация на сайте не является медицинской консультацией.
+<section id="about">
+  <h2>Обо мне</h2>
+  <div class="grid-2">
+    <div class="photo">
+      <img src="photo.jpg" alt="Михаил — массажист в Коммунарке">
+    </div>
+    <div class="card">
+      <p>
+        Я массажист в Коммунарке с медицинским образованием.
+        Ранее работал зубным техником — профессия, требующая точности и аккуратности.
+      </p>
+      <p>
+        Прошёл специальное обучение массажу и практикую уже 3 года.
+        Помогаю снять напряжение в спине и шее, уменьшить зажимы и усталость.
+      </p>
+      <p>
+        Часто ко мне обращаются по запросам:
+        массаж Коммунарка, массаж спины Коммунарка,
+        массаж шеи Коммунарка, массаж рядом метро Коммунарка.
       </p>
     </div>
   </div>
+</section>
 
-  <div class="floating" aria-label="Быстрые кнопки">
-    <a class="btn primary" href="https://wa.me/79152579742" target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn" href="tel:+79152579742">Позвонить</a>
+<section id="services">
+  <h2>Услуги</h2>
+  <div class="card">
+    <div class="service">
+      <h3>Классический массаж</h3>
+      <p>Общий тонус и расслабление.</p>
+    </div>
+    <div class="service">
+      <h3>Массаж спины</h3>
+      <p>Проработка мышц спины и снятие напряжения.</p>
+    </div>
+    <div class="service">
+      <h3>Шейно-воротниковая зона</h3>
+      <p>Работа с шеей и плечами.</p>
+    </div>
+    <div class="service">
+      <h3>Спортивный массаж</h3>
+      <p>Восстановление после нагрузок.</p>
+    </div>
+    <div class="service">
+      <h3>Антистресс-массаж</h3>
+      <p>Глубокое расслабление и отдых.</p>
+    </div>
   </div>
-</main>
+</section>
+
+<section id="prices">
+  <h2>Цены</h2>
+  <div class="card">
+    <table>
+      <thead>
+        <tr><th>Услуга</th><th>60 минут</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Классический массаж</td><td>от 2000 ₽</td></tr>
+        <tr><td>Спортивный массаж</td><td>от 2500 ₽</td></tr>
+        <tr><td>Массаж спины</td><td>от 1500 ₽</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="contacts">
+  <h2>Контакты</h2>
+  <div class="card">
+    Телефон / WhatsApp:
+    <b><a href="tel:+79152579742">+7 915 257-97-42</a></b><br><br>
+    Москва, Коммунарка • рядом с метро Коммунарка
+  </div>
+</section>
+
+<div class="footer">
+  © <span id="year"></span> Михаил — массажист в Коммунарке
+</div>
+
+</div>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
-<!-- Calendly widget -->
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
