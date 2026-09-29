@@ -1,0 +1,1861 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Массаж в Коммунарке — Михаил</title>
+
+<meta
+  name="description"
+  content="Массаж в Коммунарке. Михаил — медицинское образование, более 3 лет практики. Классический, спортивный массаж, массаж спины, шеи и антистресс-массаж. Запись в WhatsApp, Telegram или по телефону."
+>
+
+<meta name="theme-color" content="#f3e6cf">
+
+<meta property="og:title" content="Массаж в Коммунарке — Михаил">
+<meta
+  property="og:description"
+  content="Массаж в Коммунарке. Запись в WhatsApp, Telegram или по телефону."
+>
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:,">
+
+<style>
+
+:root{
+  --bg:#f3e6cf;
+  --bg2:#fbf4e7;
+  --card:#ffffff;
+  --text:#21170f;
+  --muted:#685746;
+  --accent:#8d6b3d;
+  --accent-dark:#6f512c;
+  --border:rgba(33,23,15,.12);
+  --shadow:0 18px 45px rgba(33,23,15,.08);
+  --radius:22px;
+  --max:1120px;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  background:linear-gradient(180deg,var(--bg2),var(--bg));
+  color:var(--text);
+  line-height:1.6;
+  font-size:17px;
+}
+
+a{
+  color:inherit;
+}
+
+.container{
+  width:min(var(--max),calc(100% - 40px));
+  margin:0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(251,244,231,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+
+.nav{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+}
+
+.logo{
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  background:linear-gradient(135deg,#8d6b3d,#d9c09a);
+  box-shadow:0 8px 20px rgba(80,55,25,.15);
+}
+
+.brand-name{
+  font-weight:800;
+  font-size:17px;
+}
+
+.brand-sub{
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+  font-weight:600;
+}
+
+.menu{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.menu a{
+  text-decoration:none;
+  color:var(--muted);
+  font-size:14px;
+  font-weight:700;
+}
+
+.menu a:hover{
+  color:var(--text);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:12px 20px;
+  border-radius:15px;
+  border:1px solid var(--border);
+  background:#fff;
+  color:var(--text);
+  text-decoration:none;
+  font-weight:800;
+  font-size:15px;
+  transition:.2s ease;
+}
+
+.btn:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 20px rgba(33,23,15,.08);
+}
+
+.btn-primary{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#fff;
+}
+
+.btn-primary:hover{
+  background:var(--accent-dark);
+}
+
+.btn-light{
+  background:rgba(255,255,255,.8);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  padding:70px 0 45px;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:35px;
+  align-items:center;
+}
+
+.hero-content{
+  padding:10px 0;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding:7px 12px;
+  border-radius:999px;
+  background:rgba(141,107,61,.10);
+  color:var(--accent-dark);
+  font-size:13px;
+  font-weight:800;
+  margin-bottom:15px;
+}
+
+h1{
+  font-size:clamp(36px,5vw,58px);
+  line-height:1.08;
+  letter-spacing:-1.5px;
+  margin:0 0 20px;
+}
+
+.hero-lead{
+  max-width:650px;
+  margin:0 0 25px;
+  color:var(--muted);
+  font-size:19px;
+  font-weight:500;
+}
+
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-bottom:25px;
+}
+
+.hero-info{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.info-item{
+  padding:10px 13px;
+  border:1px solid var(--border);
+  border-radius:13px;
+  background:rgba(255,255,255,.55);
+  font-size:13px;
+  font-weight:700;
+}
+
+.hero-photo{
+  min-height:360px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#eadbc1;
+  border:1px solid var(--border);
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  padding:25px;
+}
+
+.hero-photo img{
+  width:auto;
+  max-width:75%;
+  height:320px;
+  object-fit:contain;
+  display:block;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section{
+  padding:55px 0;
+}
+
+.section-title{
+  margin:0 0 10px;
+  font-size:32px;
+  letter-spacing:-.5px;
+}
+
+.section-subtitle{
+  margin:0 0 25px;
+  color:var(--muted);
+  max-width:720px;
+}
+
+.card{
+  background:rgba(255,255,255,.92);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:28px;
+  box-shadow:var(--shadow);
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:22px;
+}
+
+.about-text p{
+  margin-top:0;
+  color:var(--muted);
+}
+
+.about-text p:last-child{
+  margin-bottom:0;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.feature{
+  background:rgba(255,255,255,.72);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:22px;
+}
+
+.feature-number{
+  font-size:13px;
+  font-weight:900;
+  color:var(--accent);
+  margin-bottom:8px;
+}
+
+.feature h3{
+  margin:0 0 7px;
+  font-size:18px;
+}
+
+.feature p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+}
+
+.service{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:23px;
+  box-shadow:0 8px 25px rgba(33,23,15,.04);
+}
+
+.service h3{
+  margin:0 0 7px;
+  font-size:18px;
+}
+
+.service p{
+  margin:0;
+  color:var(--muted);
+  font-size:15px;
+}
+
+/* =========================
+   PRICES
+========================= */
+
+.price-card{
+  overflow:hidden;
+}
+
+.price-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:17px 0;
+  border-bottom:1px solid var(--border);
+}
+
+.price-row:first-child{
+  padding-top:0;
+}
+
+.price-row:last-child{
+  border-bottom:0;
+  padding-bottom:0;
+}
+
+.price-name{
+  font-weight:750;
+}
+
+.price-time{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.price-value{
+  white-space:nowrap;
+  font-weight:900;
+  color:var(--accent-dark);
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.process{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.process-item{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:22px;
+}
+
+.process-number{
+  width:35px;
+  height:35px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#eadbc1;
+  color:var(--accent-dark);
+  font-weight:900;
+  margin-bottom:13px;
+}
+
+.process-item h3{
+  margin:0 0 7px;
+  font-size:17px;
+}
+
+.process-item p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* =========================
+   PLACE
+========================= */
+
+.place-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+  align-items:stretch;
+}
+
+.place-photo{
+  min-height:360px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#eadbc1;
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:20px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.place-photo img{
+  width:100%;
+  height:100%;
+  max-height:400px;
+  object-fit:contain;
+  border-radius:16px;
+  display:block;
+}
+
+.place-text{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.place-text h3{
+  margin:0 0 15px;
+  font-size:22px;
+}
+
+.place-text p{
+  color:var(--muted);
+}
+
+.place-note{
+  margin-top:10px;
+  padding:12px 15px;
+  background:#f3e6cf;
+  border-radius:13px;
+  font-weight:800;
+  font-size:14px;
+  color:var(--accent-dark);
+}
+
+/* =========================
+   LOCATIONS
+========================= */
+
+.locations{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.location-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:25px;
+  box-shadow:0 8px 25px rgba(33,23,15,.05);
+}
+
+.location-label{
+  display:inline-block;
+  margin-bottom:10px;
+  padding:6px 10px;
+  border-radius:999px;
+  background:#f3e6cf;
+  color:var(--accent-dark);
+  font-size:12px;
+  font-weight:900;
+}
+
+.location-card h3{
+  margin:0 0 8px;
+  font-size:21px;
+}
+
+.location-card p{
+  margin:0 0 17px;
+  color:var(--muted);
+  font-size:15px;
+}
+
+.location-card .location-small{
+  margin:0;
+  font-size:14px;
+  color:var(--accent-dark);
+  font-weight:700;
+}
+
+/* =========================
+   TELEGRAM
+========================= */
+
+.telegram-card{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:25px 28px;
+  box-shadow:0 8px 25px rgba(33,23,15,.05);
+}
+
+.telegram-content h3{
+  margin:0 0 6px;
+  font-size:20px;
+}
+
+.telegram-content p{
+  margin:0;
+  color:var(--muted);
+  font-size:15px;
+}
+
+.telegram-link{
+  white-space:nowrap;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:12px 20px;
+  border-radius:15px;
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  font-weight:800;
+}
+
+.telegram-link:hover{
+  background:var(--accent-dark);
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq{
+  display:grid;
+  gap:10px;
+}
+
+details{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:18px 20px;
+}
+
+summary{
+  cursor:pointer;
+  font-weight:800;
+}
+
+details p{
+  color:var(--muted);
+  margin:12px 0 0;
+  font-size:15px;
+}
+
+details a{
+  color:var(--accent-dark);
+  font-weight:800;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+  background:linear-gradient(135deg,#e8d5b4,#f7ead4);
+  border:1px solid var(--border);
+  border-radius:28px;
+  padding:35px;
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+
+.contact h2{
+  margin:0 0 10px;
+  font-size:32px;
+}
+
+.contact p{
+  margin:0 auto 22px;
+  max-width:700px;
+  color:var(--muted);
+}
+
+.contact-buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.phone{
+  display:block;
+  margin-top:18px;
+  font-size:18px;
+  font-weight:900;
+  text-decoration:none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+  padding:35px 0 90px;
+  color:var(--muted);
+  font-size:13px;
+  text-align:center;
+}
+
+/* =========================
+   MOBILE BOOKING
+========================= */
+
+.mobile-book{
+  display:none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+  .menu{
+    display:none;
+  }
+
+  .hero{
+    padding-top:45px;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero-photo{
+    min-height:340px;
+  }
+
+  .hero-photo img{
+    height:300px;
+    max-width:70%;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
+  .process{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .place-grid{
+    grid-template-columns:1fr;
+  }
+
+  .locations{
+    grid-template-columns:1fr;
+  }
+
+  .telegram-card{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .telegram-link{
+    width:100%;
+  }
+
+}
+
+@media(max-width:600px){
+
+  body{
+    font-size:16px;
+  }
+
+  .container{
+    width:min(var(--max),calc(100% - 28px));
+  }
+
+  .hero{
+    padding:35px 0 25px;
+  }
+
+  h1{
+    font-size:37px;
+    letter-spacing:-1px;
+  }
+
+  .hero-lead{
+    font-size:17px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .hero-buttons .btn{
+    width:100%;
+  }
+
+  .hero-photo{
+    min-height:300px;
+    padding:20px;
+  }
+
+  .hero-photo img{
+    height:270px;
+    max-width:75%;
+  }
+
+  .section{
+    padding:40px 0;
+  }
+
+  .section-title{
+    font-size:28px;
+  }
+
+  .card{
+    padding:21px;
+  }
+
+  .services{
+    grid-template-columns:1fr;
+  }
+
+  .process{
+    grid-template-columns:1fr;
+  }
+
+  .price-row{
+    align-items:flex-start;
+  }
+
+  .price-row > div:last-child{
+    text-align:right;
+  }
+
+  .place-photo{
+    min-height:300px;
+  }
+
+  .place-text h3{
+    font-size:20px;
+  }
+
+  .telegram-card{
+    padding:22px;
+  }
+
+  .contact{
+    padding:28px 20px;
+  }
+
+  .contact h2{
+    font-size:28px;
+  }
+
+  .mobile-book{
+    display:flex;
+    position:fixed;
+    left:12px;
+    right:12px;
+    bottom:12px;
+    z-index:200;
+  }
+
+  .mobile-book a{
+    width:100%;
+    min-height:52px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:16px;
+    background:#8d6b3d;
+    color:#fff;
+    text-decoration:none;
+    font-weight:900;
+    box-shadow:0 10px 30px rgba(50,35,20,.25);
+  }
+
+  .footer{
+    padding-bottom:85px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="container nav">
+
+    <a class="brand" href="#top">
+
+      <div class="logo"></div>
+
+      <div>
+        <div class="brand-name">Михаил</div>
+        <span class="brand-sub">
+          массажист • Коммунарка
+        </span>
+      </div>
+
+    </a>
+
+    <nav class="menu">
+
+      <a href="#about">Обо мне</a>
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="#place">Где принимаю</a>
+      <a href="#telegram">Telegram</a>
+      <a href="#faq">FAQ</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main id="top">
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="hero-grid">
+
+      <div class="hero-content">
+
+        <div class="badge">
+          Массаж в Коммунарке
+        </div>
+
+        <h1>
+          Массаж для спины, шеи и всего тела
+        </h1>
+
+        <p class="hero-lead">
+          Бережный и внимательный массаж в Коммунарке
+          рядом с метро Коммунарка.
+          Подбираю технику и интенсивность под ваши задачи.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/79152579742"
+            target="_blank"
+            rel="noopener"
+          >
+            Записаться в WhatsApp
+          </a>
+
+          <a
+            class="btn btn-light"
+            href="https://t.me/massag_kommunarka"
+            target="_blank"
+            rel="noopener"
+          >
+            Записаться в Telegram
+          </a>
+
+          <a
+            class="btn btn-light"
+            href="tel:+79152579742"
+          >
+            Позвонить
+          </a>
+
+        </div>
+
+        <div class="hero-info">
+
+          <div class="info-item">
+            Медицинское образование
+          </div>
+
+          <div class="info-item">
+            3+ года практики
+          </div>
+
+          <div class="info-item">
+            Сеанс от 60 минут
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-photo">
+
+        <img
+          src="photo.jpg"
+          alt="Михаил — массажист в Коммунарке"
+        >
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section" id="about">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Обо мне
+    </h2>
+
+    <p class="section-subtitle">
+      В работе для меня важны аккуратность,
+      внимание к ощущениям клиента
+      и индивидуальный подход.
+    </p>
+
+    <div class="about-grid">
+
+      <div class="card about-text">
+
+        <p>
+          Я массажист в Коммунарке с медицинским образованием.
+          Ранее работал зубным техником — профессия, которая требует
+          точности, аккуратности и внимательности к деталям.
+        </p>
+
+        <p>
+          Прошёл специальное обучение массажу
+          и практикую уже более 3 лет.
+        </p>
+
+        <p>
+          В работе уделяю внимание состоянию мышц,
+          уровню напряжения и ощущениям человека
+          во время сеанса.
+        </p>
+
+        <p>
+          Ко мне обращаются за массажем спины, шеи,
+          классическим, спортивным и антистресс-массажем.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FEATURES
+========================= -->
+
+<section class="section">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Почему ко мне обращаются
+    </h2>
+
+    <p class="section-subtitle">
+      Спокойная атмосфера, индивидуальный подход
+      и понятный формат работы.
+    </p>
+
+    <div class="features">
+
+      <div class="feature">
+
+        <div class="feature-number">
+          01
+        </div>
+
+        <h3>
+          Медицинское образование
+        </h3>
+
+        <p>
+          Понимание анатомии и внимательное отношение
+          к особенностям клиента.
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-number">
+          02
+        </div>
+
+        <h3>
+          Индивидуальный подход
+        </h3>
+
+        <p>
+          Интенсивность и зоны работы подбираются
+          в зависимости от запроса.
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-number">
+          03
+        </div>
+
+        <h3>
+          Комфортная атмосфера
+        </h3>
+
+        <p>
+          Спокойный формат сеанса без спешки
+          и лишней суеты.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="section" id="services">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Услуги
+    </h2>
+
+    <p class="section-subtitle">
+      Основные виды массажа, с которыми можно обратиться ко мне.
+    </p>
+
+    <div class="services">
+
+      <div class="service">
+
+        <h3>
+          Классический массаж
+        </h3>
+
+        <p>
+          Общий массаж для расслабления,
+          улучшения самочувствия и поддержания
+          мышечного тонуса.
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <h3>
+          Массаж спины
+        </h3>
+
+        <p>
+          Работа с мышцами спины, плечевого пояса
+          и зонами, где обычно накапливается напряжение.
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <h3>
+          Шейно-воротниковая зона
+        </h3>
+
+        <p>
+          Работа с областью шеи и плеч
+          для снятия мышечного напряжения.
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <h3>
+          Спортивный массаж
+        </h3>
+
+        <p>
+          Более интенсивный формат для людей
+          с регулярными физическими нагрузками.
+        </p>
+
+      </div>
+
+
+      <div class="service">
+
+        <h3>
+          Антистресс-массаж
+        </h3>
+
+        <p>
+          Спокойный расслабляющий формат
+          для отдыха и восстановления.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PRICES
+========================= -->
+
+<section class="section" id="prices">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Цены
+    </h2>
+
+    <p class="section-subtitle">
+      Стоимость зависит от выбранного вида массажа.
+    </p>
+
+    <div class="card price-card">
+
+      <div class="price-row">
+
+        <div>
+
+          <div class="price-name">
+            Классический массаж
+          </div>
+
+          <div class="price-time">
+            60 минут
+          </div>
+
+        </div>
+
+        <div class="price-value">
+          от 2 000 ₽
+        </div>
+
+      </div>
+
+
+      <div class="price-row">
+
+        <div>
+
+          <div class="price-name">
+            Спортивный массаж
+          </div>
+
+          <div class="price-time">
+            60 минут
+          </div>
+
+        </div>
+
+        <div class="price-value">
+          от 2 500 ₽
+        </div>
+
+      </div>
+
+
+      <div class="price-row">
+
+        <div>
+
+          <div class="price-name">
+            Массаж спины
+          </div>
+
+          <div class="price-time">
+            60 минут
+          </div>
+
+        </div>
+
+        <div class="price-value">
+          от 1 500 ₽
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PROCESS
+========================= -->
+
+<section class="section">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Как проходит сеанс
+    </h2>
+
+    <p class="section-subtitle">
+      Всё просто: обсуждаем задачу, выбираем
+      подходящий формат и начинаем работу.
+    </p>
+
+    <div class="process">
+
+      <div class="process-item">
+
+        <div class="process-number">
+          1
+        </div>
+
+        <h3>
+          Обсуждаем запрос
+        </h3>
+
+        <p>
+          Вы рассказываете, что вас беспокоит
+          и какой формат массажа вам нужен.
+        </p>
+
+      </div>
+
+
+      <div class="process-item">
+
+        <div class="process-number">
+          2
+        </div>
+
+        <h3>
+          Определяем зоны
+        </h3>
+
+        <p>
+          Выбираем зоны и подходящую
+          интенсивность массажа.
+        </p>
+
+      </div>
+
+
+      <div class="process-item">
+
+        <div class="process-number">
+          3
+        </div>
+
+        <h3>
+          Проводим сеанс
+        </h3>
+
+        <p>
+          Работаю в комфортном для вас темпе,
+          учитывая ощущения во время массажа.
+        </p>
+
+      </div>
+
+
+      <div class="process-item">
+
+        <div class="process-number">
+          4
+        </div>
+
+        <h3>
+          Завершаем сеанс
+        </h3>
+
+        <p>
+          После массажа можно спокойно отдохнуть
+          и обсудить дальнейший формат.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PLACE PHOTO
+========================= -->
+
+<section class="section" id="place">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Место для массажа
+    </h2>
+
+    <p class="section-subtitle">
+      Принимаю клиентов в спокойной домашней обстановке
+      в Коммунарке.
+    </p>
+
+    <div class="place-grid">
+
+      <div class="place-photo">
+
+        <img
+          src="stol.jpg"
+          alt="Массажный стол — место проведения массажа в Коммунарке"
+        >
+
+      </div>
+
+
+      <div class="card place-text">
+
+        <h3>
+          Комфортная обстановка для сеанса
+        </h3>
+
+        <p>
+          Для массажа оборудовано отдельное удобное место
+          с массажным столом.
+        </p>
+
+        <p>
+          Здесь можно спокойно расслабиться и сосредоточиться
+          на процедуре без лишней суеты.
+        </p>
+
+        <p>
+          Принимаю клиентов в Коммунарке, поэтому вам не нужно
+          далеко ехать. Место проведения массажа находится
+          рядом с метро Коммунарка.
+        </p>
+
+        <div class="place-note">
+          📍 Коммунарка • Москва
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     LOCATIONS
+========================= -->
+
+<section class="section">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Где можно записаться ко мне
+    </h2>
+
+    <p class="section-subtitle">
+      Есть два варианта — выбрать удобное место
+      для проведения массажа.
+    </p>
+
+    <div class="locations">
+
+
+      <div class="location-card">
+
+        <span class="location-label">
+          Вариант 1
+        </span>
+
+        <h3>
+          Коммунарка
+        </h3>
+
+        <p>
+          Принимаю клиентов в оборудованном месте
+          с массажным столом в Коммунарке,
+          рядом с метро Коммунарка.
+        </p>
+
+        <p class="location-small">
+          📍 Москва • Коммунарка
+        </p>
+
+      </div>
+
+
+      <div class="location-card">
+
+        <span class="location-label">
+          Вариант 2
+        </span>
+
+        <h3>
+          TARA Wellness & Spa
+        </h3>
+
+        <p>
+          Также провожу массаж в SPA-салоне
+          <strong>TARA Wellness & Spa</strong>.
+          Если вам удобнее формат SPA-салона,
+          при записи сообщите, что хотите записаться ко мне.
+        </p>
+
+        <p class="location-small">
+          SPA-салон • предварительная запись
+        </p>
+
+        <a
+          class="btn btn-light"
+          href="https://taraspa.ru/"
+          target="_blank"
+          rel="noopener"
+          style="margin-top:18px;"
+        >
+          Сайт TARA Wellness & Spa
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     TELEGRAM
+========================= -->
+
+<section class="section" id="telegram">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Telegram
+    </h2>
+
+    <p class="section-subtitle">
+      Подписывайтесь на мой канал или пишите мне в Telegram,
+      чтобы задать вопрос и записаться на массаж.
+    </p>
+
+    <div class="telegram-card">
+
+      <div class="telegram-content">
+
+        <h3>
+          Мой Telegram-канал
+        </h3>
+
+        <p>
+          <strong>@massag_kommunarka</strong>
+        </p>
+
+      </div>
+
+
+      <a
+        class="telegram-link"
+        href="https://t.me/massag_kommunarka"
+        target="_blank"
+        rel="noopener"
+      >
+        Записаться в Telegram
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section class="section" id="faq">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Частые вопросы
+    </h2>
+
+    <div class="faq">
+
+
+      <details>
+
+        <summary>
+          Где вы принимаете?
+        </summary>
+
+        <p>
+          В Коммунарке, Москва, рядом с метро Коммунарка.
+          Также провожу массаж в SPA-салоне
+          TARA Wellness & Spa.
+          Точное место проведения можно уточнить при записи.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Сколько длится сеанс?
+        </summary>
+
+        <p>
+          Основные варианты массажа рассчитаны на 60 минут.
+          Другой формат можно обсудить при записи.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Можно ли выбрать только спину или шею?
+        </summary>
+
+        <p>
+          Да. Можно выбрать отдельную зону
+          в зависимости от вашего запроса.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Можно ли записаться в TARA Wellness & Spa?
+        </summary>
+
+        <p>
+          Да. Я также провожу массаж в
+          TARA Wellness & Spa.
+          При записи сообщите, что хотите записаться ко мне
+          в SPA-салон.
+          <br><br>
+
+          Подробнее о салоне:
+          <a
+            href="https://taraspa.ru/"
+            target="_blank"
+            rel="noopener"
+          >
+            TARA Wellness & Spa
+          </a>
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Как записаться?
+        </summary>
+
+        <p>
+          Записаться можно по телефону,
+          в WhatsApp или в Telegram.
+          При записи можно сразу указать,
+          где вам удобнее провести массаж:
+          в Коммунарке или в TARA Wellness & Spa.
+        </p>
+
+      </details>
+
+
+      <details>
+
+        <summary>
+          Как подготовиться к массажу?
+        </summary>
+
+        <p>
+          Специальная подготовка обычно не требуется.
+          Желательно не приходить сразу после плотного
+          приёма пищи.
+        </p>
+
+      </details>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="contact">
+
+      <h2>
+        Записаться на массаж
+      </h2>
+
+      <p>
+        Выберите удобный способ связи — WhatsApp,
+        Telegram или телефон.
+        При записи можно сразу указать,
+        где вам удобнее провести массаж:
+        в Коммунарке или в TARA Wellness & Spa.
+      </p>
+
+
+      <div class="contact-buttons">
+
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/79152579742"
+          target="_blank"
+          rel="noopener"
+        >
+          Записаться в WhatsApp
+        </a>
+
+
+        <a
+          class="btn btn-light"
+          href="https://t.me/massag_kommunarka"
+          target="_blank"
+          rel="noopener"
+        >
+          Записаться в Telegram
+        </a>
+
+
+        <a
+          class="btn btn-light"
+          href="tel:+79152579742"
+        >
+          Позвонить
+        </a>
+
+      </div>
+
+
+      <a
+        class="phone"
+        href="tel:+79152579742"
+      >
+        +7 915 257-97-42
+      </a>
+
+
+      <div
+        style="
+          margin-top:8px;
+          color:var(--muted);
+          font-size:14px;
+        "
+      >
+        Москва • Коммунарка • рядом с метро Коммунарка
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+  <div class="container">
+
+    © <span id="year"></span>
+    Михаил — массажист в Коммунарке
+
+  </div>
+
+</footer>
+
+
+<!-- =========================
+     MOBILE BUTTON
+========================= -->
+
+<div class="mobile-book">
+
+  <a
+    href="https://wa.me/79152579742"
+    target="_blank"
+    rel="noopener"
+  >
+    Записаться в WhatsApp
+  </a>
+
+</div>
+
+
+<script>
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+</script>
+
+
+</body>
+</html>
